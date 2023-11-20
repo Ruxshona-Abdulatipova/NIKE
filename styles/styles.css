@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'RR';
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body {
+    background: #EBEBEB;
+}
+
+.header-nav {
+    background: #322E41;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-nav-link {
+    color: #FFF;
+    font-size: 16px;
+    padding: 22px;
+    display: block;
+}
+
+.header-nav-link:hover {
+    background: #FFF;
+    color: #D47300;
+    ;
+}
+
+.header-content {
+    background: url(../images/nike2.jpg) no-repeat center/cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-content-title {
+    color: #FFF;
+    font-family: "RB";
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.header-content-text {
+    color: #FFF;
+    font-family: "RR";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header-content-text span {
+    font-family: 'RB';
+}
+
+.main-left {
+    max-width: 540px;
+    width: 100%;
+    border-radius: 6px;
+    background: #FFF;
+    padding: 15px;
+}
+
+.main-left-title {
+    color: #2C2A2A;
+    font-family: 'RB';
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.main-left-text {
+    color: #9B9B9B;
+    font-family: "RR";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main-right {
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.main-top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -37px;
+}
+
+.main-right-item {
+    box-shadow: 0 0 30px 0 purple inset;
+    max-width: 255px;
+    width: 100%;
+    border-radius: 6px;
+    background: #FFF;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 600ms;
+}
+.main-right-item:hover{
+    transform: scale(1.1);
+    cursor: grabbing;
+}
+.main-right-img{
+    border-radius: 50%;
+border: 2px solid #D47300;
+background: #FFF;
+width: 80px;
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.main-right-title{
+    color: #2C2A2A;
+text-align: center;
+font-family: "RB";
+font-size: 22px;
+font-weight: 700;
+margin-top: 15px;
+margin-bottom: 10px;
+}
+.main-right-text{
+    color: #9B9B9B;
+text-align: center;
+font-family: "RR";
+font-size: 16px;
+font-weight: 400;
+line-height: 16px; /* 100% */
+}
+.footer{
+    background: #322E41;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+   
+}
+.footer-form{
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-form-input, .footer-form-text{
+    border-radius: 6px;
+background: #FFF;
+color: #9B9B9B;
+font-family:'rr';
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+border: none;
+outline: none;
+padding: 10px;
+}
+
+.footer-form-text{
+height: 86px;
+resize: none;
+}
+.footer-form-btn{
+    border-radius: 6px;
+background: #544294;
+border: none;
+outline: none;
+color: #FFF;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+line-height: 18px; 
+padding: 10px 0;
+}
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-list{
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.footer-list-link{
+    color: #FFF;
+font-size: 16px;
+font-weight: 400;
+min-width: 90px;
+display: block;
+}
+.footer-list-link:hover{
+    color: #D47300;
+}
+.footer-social{
+    display: flex;
+    gap: 30px;
+}
+.main-left img{
+    width: 100%;
+    
+}
+
+
+
+
+
+@media(max-width:1140px){
+    .main-top{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+@media(max-width:900px){
+    .footer-box{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .header-top{
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 15px;
+    }
+    .header-nav-list{
+        justify-content: center;
+    }
+}
+@media(max-width:580px){
+  .main-right-item{
+    max-width: none;
+  
+  }  
+  .header-content{
+    height: 300px;
+  }
+  .header-nav-link{
+    padding: 10px;
+  }
+}
